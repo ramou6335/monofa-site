@@ -1,0 +1,34 @@
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.newsletter-modal {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.newsletter-modal.show {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .responsive-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.section-spacing {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.content-spacing > * + * {
+    margin-top: 2rem;
+}
